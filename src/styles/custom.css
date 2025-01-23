@@ -29,3 +29,13 @@
 .hover-transition {
   transition: 0.3s;
 }
+.BannnerSwiper .container.h-full .grid:before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: #00000054;
+  z-index: -1;
+}
