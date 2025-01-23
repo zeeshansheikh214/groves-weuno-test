@@ -7,19 +7,10 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        background: "linear-gradient(0deg, #6552CF 0%, #4230A5 100%)",
-      },
       colors: {
-        themePrimary: "#40DDF7",
-        themeSecondary: "#0B0E5D",
-        themeSecondary: "#0B0E5D",
-        themeSurface: "#DAFF17",
-        themered: "#FE6C5F",
-        themeAcqua: "#187B8E",
-        themelayput: "#6350CD",
-        themeblack: "#252525",
-        themetextblack: "#898989",
+        themePrimary: "#DCBB75",
+        themeSecondary: "#AD8749",
+        themelight: "#c3c1c1",
       },
     },
   },

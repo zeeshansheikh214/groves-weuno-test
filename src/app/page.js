@@ -1,13 +1,13 @@
 import { Logo } from "@/asstes";
+import Banner from "@/components/Home/Banner";
 import Image from "next/image";
 
  
 
 export default function Home() {
   return ( 
-    <>
-     
-    <Image src={Logo} alt="logo" />
-    </>
+   <div className="Home">
+    <Banner/>
+   </div>
   );
 }
