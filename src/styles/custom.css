@@ -39,3 +39,31 @@
   background-color: #00000054;
   z-index: -1;
 }
+
+.attractionsslider {
+  padding-top: 30px;
+}
+.attractionsslider .swiper-wrapper,
+.Experiencesslider .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.attractionsslider .swiper-wrapper .swiper-slide.swiper-slide-next {
+  scale: 0.8;
+}
+
+.attractionsslider .swiper-wrapper .swiper-slide {
+  transition: 0.5s;
+}
+
+.attractionsslider .swiper-wrapper .swiper-slide.swiper-slide-next + div {
+  margin-top: -50px;
+}
+.Experiencesslider .swiper-wrapper .swiper-slide.swiper-slide-next {
+  scale: 1;
+}
+.Experiencesslider .swiper-wrapper .swiper-slide {
+  transition: 0.5s;
+  scale: 0.8;
+}
