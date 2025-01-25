@@ -11,7 +11,7 @@ const About = () => {
     <section className="About py-10">
       <div className="container mx-auto px-4">
         <div className="w-full lg:w-[80%] mx-auto text-white mb-12">
-          <h2 className="text-center text-4xl font-normal mb-2 ">
+          <h2 className="text-center text-2xl md:text-4xl lg:text-5xl font-normal mb-2 ">
             Mall Of: Endless Possibilities
           </h2>
           <p className="text-center text-base">
