@@ -12,8 +12,8 @@ const homeBannerSlide = [
   },
   {
     imageSrc: BannerBG,
-    subtitle: "KHAWAJA YANNI",
-    title: "The new era of luxury2",
+    subtitle: "Vida Vera",
+    title: "The new era of luxury",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     link: "/",
@@ -21,8 +21,8 @@ const homeBannerSlide = [
   },
   {
     imageSrc: BannerBG,
-    subtitle: "KHAWAJA YANNI",
-    title: "The new era of luxury3",
+    subtitle: "Zama Zulu",
+    title: "The new era of luxury",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     link: "/",

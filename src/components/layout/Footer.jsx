@@ -20,11 +20,11 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-between">
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-normal mb-2 md:col-span-2">
-            Join us for
-            <br /> an unforgettable experience
+            Join us for an
+            <br /> unforgettable experience
           </h2>
           <div className="">
-            <p>DOWNLOAD THE GROVES APP</p>
+            <p className="font-semibold">DOWNLOAD THE GROVES APP</p>
             <div className="grid grid-cols-2 mt-3 items-center gap-4">
               <Image
                 src={AppleStore}
@@ -45,34 +45,42 @@ const Footer = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3   gap-5 my-8 md:my-16 text-white">
           <div className="location-area">
-            <h6 className="mb-3 uppercase">Location</h6>
-            <Link href={"/"} className="">
-              Al-Hizam Park Al-Semairi,
-              <br /> Yanbu Al Bahr 46455 <br />
+            <h6 className="mb-3 uppercase font-sans tracking-[2px] text-sm font-normal">
+              Location
+            </h6>
+            <Link href={"/"} className="text-sm">
+              Al-Hizam Park
+              <br /> Al-Semairi, Yanbu Al Bahr 46455 <br />
               Riyadh Saudi Arabia
             </Link>
           </div>
           <div className="working-area">
-            <h6 className="mb-3 uppercase">WORKING HOURS</h6>
-            <span>
+            <h6 className="mb-3 uppercase font-sans tracking-[2px] text-sm font-normal">
+              WORKING HOURS
+            </h6>
+            <span className="text-sm">
               Sun until Thurs: 4:00PM <br />
               Fri & Sat: 2:30PM
             </span>
-            <h6 className="mb-3 mt-9">Gates Close at:</h6>
-            <span>
+            <h6 className="mt-6  font-sans text-sm font-normal">
+              Gates Close at:
+            </h6>
+            <span className="text-sm">
               Sat until Wed: 12:00AM <br />
               Thu & Fri: 12:30AM
             </span>
           </div>
           <div className="working-area flex flex-col">
-            <h6 className="mb-3 uppercase">GUEST SERVICE CALL</h6>
-            <Link href={"mailto:cc@thegroves-sa.com"} className="">
+            <h6 className="mb-3 uppercase font-sans tracking-[2px] text-sm font-normal">
+              GUEST SERVICE CALL
+            </h6>
+            <Link href={"mailto:cc@thegroves-sa.com"} className="text-sm">
               cc@thegroves-sa.com
             </Link>
-            <Link href={"tel:920001672"} className="">
+            <Link href={"tel:920001672"} className="text-sm">
               920001672
             </Link>
-            <Link href={"tel:+966556631309"} className="">
+            <Link href={"tel:+966556631309"} className="text-sm">
               +966556631309
             </Link>
           </div>
@@ -94,13 +102,13 @@ const Footer = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-9">
           <div className="flex flex-row items-center justify-between gap-4">
-            <Link href={"/"} className="text-white">
+            <Link href={"/"} className="text-white text-sm">
               Terms & Conditions
             </Link>
-            <Link href={"/"} className="text-white">
+            <Link href={"/"} className="text-white text-sm">
               Privacy Policy
             </Link>
-            <Link href={"/"} className="text-white">
+            <Link href={"/"} className="text-white text-sm">
               ©2023 The Groves for Entertainment
             </Link>
           </div>

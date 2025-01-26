@@ -65,19 +65,19 @@ const About = () => {
         </div>
 
         <div className="mt-12">
-          <div className="rounded-lg bg-[#ffffff0f] p-8 cursor-pointer">
-            <div className="flex flex-row justify-between items-center">
+          <div className="rounded-3xl bg-[#ffffff0f] p-8 cursor-pointer">
+            <div className="flex  flex-row justify-between items-center">
               <div className="w-full lg:w-[60%] text-white">
-                <span className="mb-8 table text-base tracking-[1px]">25 SR/GUEST</span>
+                <span className="mb-8 table  tracking-[1px] text-sm leading-tight">25 SR/GUEST</span>
                 <h4 className="mb-3 ">Get your General Access Ticket</h4>
-                <p>
+                <p className="font-normal">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text e
                 </p>
               </div>
               <div className="">
-                <FaArrowRight className="icons hover-transition group-hover:translate-x-2" />
+                <FaArrowRight className="icons hover-transition group-hover:translate-x-2 text-2xl md:text-5xl font-normal" />
               </div>
             </div>
           </div>

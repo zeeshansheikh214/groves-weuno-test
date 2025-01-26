@@ -62,6 +62,23 @@ const Experiences = () => {
               }}
               //   navigation={true}
               modules={[Navigation]}
+              breakpoints={{
+                // when the viewport width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                // when the viewport width is >= 768px
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                // when the viewport width is >= 1024px
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+              }}
               className="Experiencesslider"
             >
               {data.map((item, index) => (
@@ -75,7 +92,7 @@ const Experiences = () => {
                       className="w-full h-auto object-cover"
                       unoptimized
                     />
-                    <h2>{item.name}</h2>
+                    <h2 className="text-2xl mt-7">{item.name}</h2>
                   </div>
                 </SwiperSlide>
               ))}

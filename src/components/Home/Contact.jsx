@@ -8,13 +8,13 @@ const Contact = () => {
   return (
     <section className="generalaccess py-10">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
+        <div className="grid   grid-cols-1 md:grid-cols-2 gap-5 items-center">
           <Image
             src={Map}
             alt="Map"
             width={600}
             height={600}
-            className="w-full h-auto"
+            className="w-full h-auto order-2 lg:order-1"
             unoptimized
           />
           <div className="content-area">

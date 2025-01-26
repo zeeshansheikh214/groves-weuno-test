@@ -10,7 +10,7 @@ import { homeBannerSlide } from "@/data/slides";
 
 const Banner = () => {
   return (
-    <section className="Banner -mt-[150px] h-[768px]">
+    <section className="Banner -mt-[150px] h-[700px]">
       <div className="h-full">
         <Swiper
           pagination={{
@@ -39,16 +39,16 @@ const Banner = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center h-full">
                   {/* Content Area */}
                   <div className="content-area flex flex-col gap-5 lg:w-[80%] lg:mt-[120px]">
-                    <span className="text-white font-medium tracking-[2px]">
+                    <span className="text-sm text-white font-light tracking-[2px] uppercase">
                       {slide.subtitle}
                     </span>
-                    <h1 className="text-white text-4xl lg:text-5xl font-bold leading-tight">
+                    <h1 className="text-white text-4xl lg:text-5xl font-normal leading-tight ]">
                       {slide.title}
                     </h1>
-                    <p className="text-white">{slide.description}</p>
+                    <p className="text-white text-sm">{slide.description}</p>
                     <Link
                       href={slide.link}
-                      className="themeButton max-w-[300px] flex items-center justify-between group"
+                      className="themeButton max-w-[300px] flex items-center justify-between group font-normal"
                     >
                       {slide.btntext}
                       <FaArrowRight className="icons hover-transition group-hover:translate-x-2" />

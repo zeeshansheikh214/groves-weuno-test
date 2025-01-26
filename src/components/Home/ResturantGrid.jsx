@@ -29,7 +29,7 @@ const ResturantGrid = () => {
   return (
     <section className="About py-10">
       <div className="container mx-auto px-4">
-        <div className="w-full lg:w-[80%] mx-auto text-white mb-12">
+        <div className="w-full lg:w-[70%] mx-auto text-white mb-12">
           <h2 className="text-center text-4xl font-normal mb-2 ">
             Experience the Finest Cuisine
           </h2>
@@ -41,7 +41,7 @@ const ResturantGrid = () => {
           </p>
         </div>
         <div className="relative">
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {data.map((item, index) => (
               <div
                 key={index}
@@ -57,8 +57,8 @@ const ResturantGrid = () => {
                 />
                 <div className="px-0 md:px-4 my-4 flex flex-row justify-between items-center">
                   <div>
-                    <h4 className="text-2xl md:text-3xl mb-4">{item.title}</h4>
-                    <span className=" rounded-full py-1 px-4 text-white bg-themeSecondary uppercase tracking-[2px] text-sm">
+                    <h4 className="text-2xl md:text-3xl mb-4 !font-light">{item.title}</h4>
+                    <span className=" rounded-full py-1 px-4 text-white bg-themeSecondary uppercase tracking-[2px] text-xs">
                       {item.price} sr per guest
                     </span>
                   </div>

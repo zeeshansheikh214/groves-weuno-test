@@ -39,7 +39,7 @@ const GeneralAccess = () => {
   return (
     <section className="generalaccess py-10">
       <div className="container mx-auto px-4">
-        <div className="w-full xl:w-[60%]  text-white mb-12">
+        <div className="w-full lg:w-[70%]  text-white mb-12">
           <h2 className="  text-5xl font-normal mb-2 ">
             Book General Access ticket and enjoy the attractions for free
           </h2>
@@ -62,6 +62,23 @@ const GeneralAccess = () => {
           }}
           //   navigation={true}
           modules={[Navigation]}
+          breakpoints={{
+            // when the viewport width is >= 320px
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            // when the viewport width is >= 768px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            // when the viewport width is >= 1024px
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
           className="attractionsslider"
         >
           {data.map((item, index) => (
@@ -75,7 +92,9 @@ const GeneralAccess = () => {
                   className="w-full h-auto object-cover"
                   unoptimized
                 />
-                <h2 className="text-2xl md:text-3xl text-center mt-6">{item.name}</h2>
+                <h2 className="text-2xl md:text-3xl text-center mt-6">
+                  {item.name}
+                </h2>
               </div>
             </SwiperSlide>
           ))}
