@@ -3,11 +3,34 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 0;
+  z-index: -10;
   background-image: linear-gradient(0deg, #00000000, #0f1500);
 }
 .noScroll {
   overflow: hidden !important;
+}
+.mobile-menu{
+  transform: 1s;
+  transform: translateY(-100%);
+  
+}
+.mobile-menu.active{
+  transform: translateY(0);
+}
+.menu-flags button#rfs-btn {
+  border: none;
+  box-sizing: unset;
+}
+.menu-flags button#rfs-btn::after {
+  position: absolute;
+  left: 0; 
+  color: white !important; 
+}
+span.ReactFlagsSelect-module_selectValue__152eS {
+  /* border: 1px solid white; */
+  padding: 7px 20px;
+  border-radius: 11px;
+  color: white;
 }
 
 .themeButton {

@@ -19,6 +19,13 @@ const Footer = () => {
     <footer className="Footer py-10 border-t border-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-between">
+          <Image
+            src={Logo}
+            alt="logo"
+            width={500}
+            height={500}
+            className="max-w-[250px] w-full block lg:hidden"
+          />
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-normal mb-2 md:col-span-2">
             Join us for an
             <br /> unforgettable experience
@@ -91,7 +98,7 @@ const Footer = () => {
             alt="logo"
             width={500}
             height={500}
-            className="max-w-[250px] w-full"
+            className="max-w-[250px] w-full hidden lg:block"
           />
           <div className="social-media flex flex-row gap-4 items-center">
             <FaTiktok className="icons  hover-transition text-themelight" />
@@ -100,19 +107,19 @@ const Footer = () => {
             <FaSnapchatGhost className="icons  hover-transition text-themelight" />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-9">
-          <div className="flex flex-row items-center justify-between gap-4">
-            <Link href={"/"} className="text-white text-sm">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 justify-center md:justify-between items-center mt-9">
+          <div className="flex flex-col  flex-wrap lg:flex-row items-center justify-start lg:justify-between gap-4 text-left">
+            <Link href={"/"} className="text-white text-sm w-full">
               Terms & Conditions
             </Link>
-            <Link href={"/"} className="text-white text-sm">
+            <Link href={"/"} className="text-white text-sm w-full">
               Privacy Policy
             </Link>
-            <Link href={"/"} className="text-white text-sm">
+            <Link href={"/"} className="text-white text-sm w-full">
               ©2023 The Groves for Entertainment
             </Link>
           </div>
-          <div className="social-media flex flex-row gap-4 items-center">
+          <div className="social-media flex flex-row gap-4 items-center   justify-start lg:justify-end">
             <Image src={payment3} alt="payment" width={26} height={26} />
             <Image src={payment2} alt="payment" width={26} height={26} />
             <Image src={payment1} alt="payment" width={26} height={26} />
