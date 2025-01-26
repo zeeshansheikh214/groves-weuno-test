@@ -100,7 +100,7 @@ const Footer = () => {
             height={500}
             className="max-w-[250px] w-full hidden lg:block"
           />
-          <div className="social-media flex flex-row gap-4 items-center">
+          <div className="social-media flex flex-row gap-4 lg:items-center">
             <FaTiktok className="icons  hover-transition text-themelight" />
             <RiInstagramFill className="icons  hover-transition text-themelight" />
             <BsTwitterX className="icons  hover-transition text-themelight" />
@@ -108,18 +108,18 @@ const Footer = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 justify-center md:justify-between items-center mt-9">
-          <div className="flex flex-col  flex-wrap lg:flex-row items-center justify-start lg:justify-between gap-4 text-left">
-            <Link href={"/"} className="text-white text-sm w-full">
+          <div className="flex flex-col md:flex-row   lg:flex-row lg:items-center justify-start lg:justify-between gap-4 text-left">
+            <Link href={"/"} className="text-white text-sm ">
               Terms & Conditions
             </Link>
-            <Link href={"/"} className="text-white text-sm w-full">
+            <Link href={"/"} className="text-white text-sm ">
               Privacy Policy
             </Link>
-            <Link href={"/"} className="text-white text-sm w-full">
+            <Link href={"/"} className="text-white text-sm ">
               ©2023 The Groves for Entertainment
             </Link>
           </div>
-          <div className="social-media flex flex-row gap-4 items-center   justify-start lg:justify-end">
+          <div className="social-media flex flex-row gap-4 lg:items-center   justify-start lg:justify-end">
             <Image src={payment3} alt="payment" width={26} height={26} />
             <Image src={payment2} alt="payment" width={26} height={26} />
             <Image src={payment1} alt="payment" width={26} height={26} />

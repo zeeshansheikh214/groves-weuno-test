@@ -42,7 +42,7 @@ const Banner = () => {
                     <span className="text-sm text-white font-light tracking-[2px] uppercase">
                       {slide.subtitle}
                     </span>
-                    <h1 className="text-white text-4xl lg:text-[68px] font-normal leading-[76px] max-w-[80%]">
+                    <h1 className="text-white text-4xl lg:text-[68px] font-normal lg:leading-[76px] max-w-[80%]">
                       {slide.title}
                     </h1>
                     <p className="text-white text-base">{slide.description}</p>
