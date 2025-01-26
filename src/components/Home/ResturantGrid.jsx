@@ -30,7 +30,7 @@ const ResturantGrid = () => {
     <section className="About py-10">
       <div className="container mx-auto px-4">
         <div className="w-full lg:w-[70%] mx-auto text-white mb-12">
-          <h2 className="text-center text-4xl font-normal mb-2 ">
+          <h2 className="text-center text-3xl md:text-[50px] font-normal mb-4 ">
             Experience the Finest Cuisine
           </h2>
           <p className="text-center text-base">

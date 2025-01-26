@@ -8,16 +8,16 @@ const Contact = () => {
   return (
     <section className="generalaccess py-10">
       <div className="container mx-auto px-4">
-        <div className="grid   grid-cols-1 md:grid-cols-2 gap-5 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
           <Image
             src={Map}
             alt="Map"
             width={600}
             height={600}
-            className="w-full h-auto order-2 lg:order-1"
+            className="w-full h-auto lg:order-1 order-2"
             unoptimized
           />
-          <div className="content-area">
+          <div className="content-area lg:order-2 order-1">
             <div className="content-area flex flex-col gap-2 lg:w-[80%] lg:mt-[120px]">
               <span className="text-white font-light tracking-[2px]">
                 EXPERIENCE THE GROVES

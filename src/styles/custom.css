@@ -35,7 +35,7 @@ span.ReactFlagsSelect-module_selectValue__152eS {
 
 .themeButton {
   border-radius: 14px;
-  padding: 10px 34px;
+  padding: 14px 34px;
   background-image: linear-gradient(0deg, #dcbb75, #ad8749);
   color: white;
   background-size: 100% 100%;
@@ -63,8 +63,9 @@ span.ReactFlagsSelect-module_selectValue__152eS {
   left: 0;
   top: 0;
   position: absolute;
-  background-color: #00000054;
+  background-color: #000000;
   z-index: -1;
+  opacity: 52%;
 }
 
 .attractionsslider {

@@ -11,7 +11,7 @@ const About = () => {
     <section className="About py-10">
       <div className="container mx-auto px-4">
         <div className="w-full lg:w-[80%] mx-auto text-white mb-12">
-          <h2 className="text-center text-2xl md:text-4xl lg:text-5xl font-normal mb-2 ">
+          <h2 className="text-center text-2xl md:text-4xl lg:text-[50px] font-normal mb-3 ">
             Mall Of: Endless Possibilities
           </h2>
           <p className="text-center text-base">
@@ -21,7 +21,7 @@ const About = () => {
             and scrambled it to make a type specimen book.
           </p>
         </div>
-        <div className="relative">
+        <div className="relative flex items-center justify-center">
           <Image
             src={VideoPoster}
             width={960}
@@ -31,10 +31,10 @@ const About = () => {
             unoptimized
           />
           <button
-            className="btn bg-white text-[#0F1500] px-4 rounded-full absolute top-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2  mx-auto"
+            className="btn bg-white  px-4 rounded-full  absolute top-[50%] border-none w-[76px] h-[76px] hover:bg-[#283606] group"
             onClick={() => setIsModalOpen(true)}
           >
-            <FaPlay className="" />
+            <FaPlay className="text-[#283606] text-2xl md:text-4xl group-hover:text-white" />
           </button>
           {isModalOpen && (
             <div

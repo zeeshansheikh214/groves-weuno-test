@@ -38,14 +38,14 @@ const Banner = () => {
               <div className="container h-full">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center h-full">
                   {/* Content Area */}
-                  <div className="content-area flex flex-col gap-5 lg:w-[80%] lg:mt-[120px]">
+                  <div className="content-area flex flex-col gap-7 lg:w-[80%] lg:mt-[120px]">
                     <span className="text-sm text-white font-light tracking-[2px] uppercase">
                       {slide.subtitle}
                     </span>
-                    <h1 className="text-white text-4xl lg:text-5xl font-normal leading-tight ]">
+                    <h1 className="text-white text-4xl lg:text-[68px] font-normal leading-[76px] max-w-[80%]">
                       {slide.title}
                     </h1>
-                    <p className="text-white text-sm">{slide.description}</p>
+                    <p className="text-white text-base">{slide.description}</p>
                     <Link
                       href={slide.link}
                       className="themeButton max-w-[300px] flex items-center justify-between group font-normal"

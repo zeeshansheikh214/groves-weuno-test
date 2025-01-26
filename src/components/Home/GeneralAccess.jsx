@@ -40,7 +40,7 @@ const GeneralAccess = () => {
     <section className="generalaccess py-10">
       <div className="container mx-auto px-4">
         <div className="w-full lg:w-[70%]  text-white mb-12">
-          <h2 className="  text-5xl font-normal mb-2 ">
+          <h2 className="  text-3xl md:text-[50px] font-normal mb-2 leading-normal md:leading-[54px]">
             Book General Access ticket and enjoy the attractions for free
           </h2>
 

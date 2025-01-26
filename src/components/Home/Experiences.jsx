@@ -41,7 +41,7 @@ const Experiences = () => {
       <div className="container mx-auto px-4">
         <div className="w-full text-white  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 items-center">
           <div>
-            <h2 className="  text-5xl font-normal mb-2 ">
+            <h2 className="  text-3xl md:text-[50px] font-normal mb-2 md:leading-[55px]">
               Curate your experience as you like
             </h2>
 
@@ -60,20 +60,17 @@ const Experiences = () => {
               pagination={{
                 clickable: true,
               }}
-              //   navigation={true}
               modules={[Navigation]}
               breakpoints={{
-                // when the viewport width is >= 320px
                 320: {
                   slidesPerView: 1,
                   spaceBetween: 10,
                 },
-                // when the viewport width is >= 768px
+
                 768: {
                   slidesPerView: 2,
                   spaceBetween: 20,
                 },
-                // when the viewport width is >= 1024px
                 1024: {
                   slidesPerView: 3,
                   spaceBetween: 30,
@@ -92,7 +89,7 @@ const Experiences = () => {
                       className="w-full h-auto object-cover"
                       unoptimized
                     />
-                    <h2 className="text-2xl mt-7">{item.name}</h2>
+                    <h2 className="text-2xl md:text-3xl mt-7">{item.name}</h2>
                   </div>
                 </SwiperSlide>
               ))}
