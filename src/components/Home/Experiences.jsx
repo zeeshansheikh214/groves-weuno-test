@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { FaArrowRight } from "react-icons/fa6";
 import { Experiences0, Experiences1, Experiences2 } from "@/asstes";
 import Image from "next/image";
@@ -60,7 +60,11 @@ const Experiences = () => {
               pagination={{
                 clickable: true,
               }}
-              modules={[Navigation]}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              modules={[Navigation, Autoplay]}
               breakpoints={{
                 320: {
                   slidesPerView: 1,

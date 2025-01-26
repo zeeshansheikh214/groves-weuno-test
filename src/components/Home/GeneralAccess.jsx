@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { FaArrowRight } from "react-icons/fa6";
 import { Portfolio, Portfolio2, Portfolio3 } from "@/asstes";
 import Image from "next/image";
@@ -60,20 +60,20 @@ const GeneralAccess = () => {
           pagination={{
             clickable: true,
           }}
-          //   navigation={true}
-          modules={[Navigation]}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          modules={[Navigation, Autoplay]}
           breakpoints={{
-            // when the viewport width is >= 320px
             320: {
               slidesPerView: 1,
               spaceBetween: 10,
             },
-            // when the viewport width is >= 768px
             768: {
               slidesPerView: 2,
               spaceBetween: 20,
             },
-            // when the viewport width is >= 1024px
             1024: {
               slidesPerView: 3,
               spaceBetween: 30,
